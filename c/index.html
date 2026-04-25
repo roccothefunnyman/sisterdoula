@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>the tending / Melissa Cunningham, birth doula, Los Angeles</title>
+    <meta
+      name="description"
+      content="A birth doula in Los Angeles. By appointment."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #c47a5e;
+        --ink: #1a0f08;
+        --line: #1a0f0844;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { background: var(--bg); color: var(--ink); }
+      body {
+        font-family: "Fraunces", Georgia, serif;
+        font-variation-settings: "opsz" 14, "SOFT" 50, "WONK" 0;
+        font-size: 18px;
+        line-height: 1.45;
+        overflow-x: hidden;
+      }
+      a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+      a:hover { text-decoration-thickness: 2px; }
+
+      .mono {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .frame {
+        padding: 2rem 2rem 6rem;
+        max-width: 110rem;
+        margin: 0 auto;
+      }
+
+      header.bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 2rem;
+        align-items: start;
+        padding-bottom: 6rem;
+      }
+      header.bar .id { display: flex; gap: 1rem; flex-wrap: wrap; }
+      header.bar nav { display: flex; gap: 1.75rem; }
+
+      .display {
+        font-family: "Fraunces", Georgia, serif;
+        font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+        font-weight: 300;
+        font-size: clamp(4rem, 16vw, 14rem);
+        line-height: 0.88;
+        letter-spacing: -0.045em;
+        margin-left: -0.05em;
+      }
+      .display em {
+        font-style: italic;
+        font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+      }
+
+      .sub {
+        margin: 2.5rem 0 0;
+        max-width: 38ch;
+        font-size: 1.35rem;
+        font-style: italic;
+        line-height: 1.4;
+        font-variation-settings: "opsz" 36, "SOFT" 100;
+      }
+
+      section {
+        border-top: 1px solid var(--ink);
+        padding: 4rem 0 5rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+      }
+      section .label { padding-top: 0.5rem; }
+      section .label .num { display: block; margin-top: 0.5rem; font-size: 1rem; opacity: 0.7; }
+      section h2 {
+        font-variation-settings: "opsz" 144, "WONK" 1;
+        font-weight: 400;
+        font-size: clamp(2.25rem, 6vw, 5rem);
+        line-height: 0.96;
+        letter-spacing: -0.025em;
+        margin-bottom: 1.5rem;
+      }
+      section .body { font-size: 1.0625rem; max-width: 60ch; }
+      section .body p + p { margin-top: 1em; }
+      section .body em {
+        font-style: italic;
+        font-variation-settings: "opsz" 24, "SOFT" 100;
+      }
+
+      ul.services {
+        list-style: none;
+        margin-top: 1rem;
+      }
+      ul.services li {
+        border-top: 1px solid var(--ink);
+        padding: 1.5rem 0;
+        display: grid;
+        grid-template-columns: 5ch 1fr 1.5fr;
+        gap: 2rem;
+        align-items: baseline;
+      }
+      ul.services li:last-child { border-bottom: 1px solid var(--ink); }
+      ul.services .name {
+        font-variation-settings: "opsz" 72, "WONK" 1;
+        font-size: 1.75rem;
+        line-height: 1.1;
+      }
+      ul.services .desc { font-size: 1rem; opacity: 0.85; }
+
+      .write-block {
+        font-size: 2rem;
+        font-variation-settings: "opsz" 72, "SOFT" 100, "WONK" 1;
+        line-height: 1.25;
+        max-width: 30ch;
+      }
+      .write-block .email {
+        display: inline-block;
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+        font-style: italic;
+      }
+
+      .colophon {
+        border-top: 1px solid var(--ink);
+        padding-top: 2rem;
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+      }
+
+      @media (max-width: 800px) {
+        section { grid-template-columns: 1fr; gap: 1.5rem; }
+        header.bar { grid-template-columns: 1fr; gap: 1.5rem; }
+        header.bar nav { flex-wrap: wrap; gap: 1rem; }
+        ul.services li { grid-template-columns: 4ch 1fr; }
+        ul.services .desc { grid-column: 2; opacity: 0.8; font-size: 0.95rem; }
+        .colophon { grid-template-columns: 1fr 1fr; }
+        .frame { padding: 1.5rem 1.25rem 4rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <header class="bar">
+        <div class="id mono">
+          <span>(LA / 026)</span>
+          <span>·</span>
+          <span>est. 2025</span>
+          <span>·</span>
+          <span>by appt.</span>
+        </div>
+        <nav class="mono">
+          <a href="#tend">tend</a>
+          <a href="#circle">circle</a>
+          <a href="#melissa">melissa</a>
+          <a href="#write">write</a>
+        </nav>
+      </header>
+
+      <h1 class="display">the<br />tend<em>ing</em></h1>
+      <p class="sub">
+        A birth doula in Los Angeles. By appointment, for your kind of birth.
+      </p>
+
+      <section id="tend">
+        <div class="label mono">
+          On tending
+          <span class="num">01</span>
+        </div>
+        <div>
+          <h2>Every family deserves to be tended to.</h2>
+          <div class="body">
+            <p>
+              Tending is small, attentive work. Questions answered before they get asked. A hand on a shoulder when the room gets loud. The right thing brought before anyone has to ask for it.
+            </p>
+            <p>
+              You don't have to know what you want. You don't have to have a plan. You have to be willing to be tended to, and we will figure the rest out together.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="circle">
+        <div class="label mono">
+          The circle
+          <span class="num">02</span>
+        </div>
+        <div>
+          <h2>Your care team, on your terms.</h2>
+          <div class="body">
+            <p>
+              What we tend to, together, before and through your birth.
+            </p>
+            <ul class="services">
+              <li>
+                <span class="mono">01</span>
+                <span class="name">Your village</span>
+                <span class="desc">The people, the rhythm, the room.</span>
+              </li>
+              <li>
+                <span class="mono">02</span>
+                <span class="name">Your vision</span>
+                <span class="desc">What you want this birth to feel like, before anyone else gets a vote.</span>
+              </li>
+              <li>
+                <span class="mono">03</span>
+                <span class="name">Your choices</span>
+                <span class="desc">There are more options than the pamphlet shows. We go through them.</span>
+              </li>
+              <li>
+                <span class="mono">04</span>
+                <span class="name">Your partner</span>
+                <span class="desc">So they can show up ready and supported, not stranded in the corner.</span>
+              </li>
+              <li>
+                <span class="mono">05</span>
+                <span class="name">Your questions</span>
+                <span class="desc">All of them. The first consult is free.</span>
+              </li>
+              <li>
+                <span class="mono">06</span>
+                <span class="name">Your care team</span>
+                <span class="desc">The circle around your birth: providers, family, friends, on your terms.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="melissa">
+        <div class="label mono">
+          About
+          <span class="num">03</span>
+        </div>
+        <div>
+          <h2>Holding space for <em>all kinds</em> of birth.</h2>
+          <div class="body">
+            <p>
+              I'm Melissa Cunningham. I trained as a birth doula and I work in Los Angeles and the surrounding county.
+            </p>
+            <p>
+              I work with first-time parents, second-time parents, partners, queer families, and anyone whose birth doesn't fit a brochure. I don't have a script. We figure out what your kind of birth looks like, and then I help you get there.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="write">
+        <div class="label mono">
+          Write
+          <span class="num">04</span>
+        </div>
+        <div>
+          <p class="write-block">
+            Send a note. What's coming up, when it's coming, what you're looking for. I'll write back.
+            <br />
+            <a class="email" href="mailto:hello@example.com">hello@example.com</a>
+          </p>
+          <p class="mono" style="margin-top: 2rem;">
+            <a href="https://instagram.com/thetendingdoula">@thetendingdoula</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="colophon mono">
+        <span>the tending</span>
+        <span>los angeles</span>
+        <span>est. 2025</span>
+        <span>© Melissa Cunningham</span>
+      </div>
+    </div>
+  </body>
+</html>

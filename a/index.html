@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>the tending / Melissa Cunningham, birth doula, Los Angeles</title>
+    <meta
+      name="description"
+      content="Compassionate, evidence-based birth doula support in Los Angeles."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #f3ecdf;
+        --ink: #1c130c;
+        --rule: #1c130c;
+        --soft: #1c130c99;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+        font-size: 19px;
+        line-height: 1.55;
+        font-feature-settings: "onum";
+      }
+      a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+      .mono {
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+      }
+      .italic { font-family: "Cormorant Garamond", serif; font-style: italic; font-weight: 300; }
+
+      .masthead {
+        text-align: center;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-top: 4px double var(--ink);
+        border-bottom: 1px solid var(--ink);
+      }
+      .masthead .label {
+        display: flex; justify-content: space-between;
+        max-width: 60rem; margin: 0 auto 0.75rem;
+      }
+      .wordmark {
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: clamp(3rem, 10vw, 6rem);
+        line-height: 1;
+        letter-spacing: -0.01em;
+      }
+      .masthead .meta {
+        display: flex; justify-content: space-between;
+        max-width: 60rem; margin: 1rem auto 0;
+        padding-top: 0.75rem;
+        border-top: 1px solid var(--rule);
+      }
+      .masthead .meta span:nth-child(2) { letter-spacing: 0.32em; }
+
+      main { max-width: 60rem; margin: 0 auto; padding: 0 1.5rem; }
+
+      .dek {
+        text-align: center;
+        padding: 4rem 1.5rem 3rem;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 300;
+        line-height: 1.3;
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+
+      .dispatch {
+        padding: 4rem 0;
+        border-top: 1px solid var(--rule);
+      }
+      .dispatch .num {
+        margin-bottom: 1.5rem;
+      }
+      .dispatch h2.italic {
+        font-size: clamp(2.25rem, 5vw, 3.75rem);
+        line-height: 1.05;
+        max-width: 22ch;
+        margin-bottom: 2rem;
+        letter-spacing: -0.005em;
+      }
+      .dispatch .body { columns: 2; column-gap: 2.5rem; }
+      .dispatch .body > p:first-child::first-letter {
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-size: 4.5em;
+        float: left;
+        line-height: 0.85;
+        margin: 0.05em 0.08em 0 -0.04em;
+        font-weight: 400;
+      }
+      .dispatch .body p + p { margin-top: 1em; text-indent: 1.5em; }
+
+      .pull {
+        text-align: center;
+        padding: 5rem 1rem;
+        border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule);
+      }
+      .pull q {
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: clamp(2rem, 4.5vw, 3.25rem);
+        line-height: 1.18;
+        quotes: "\201C" "\201D";
+        display: inline-block;
+        max-width: 24ch;
+      }
+      .pull .attr { margin-top: 1.5rem; }
+
+      .tend-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .tend-list li {
+        display: grid;
+        grid-template-columns: 6ch 1fr 1fr;
+        gap: 2rem;
+        padding: 1.5rem 0;
+        border-top: 1px dotted var(--soft);
+        align-items: baseline;
+      }
+      .tend-list li:last-child { border-bottom: 1px dotted var(--soft); }
+      .tend-list .roman {
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-size: 1.5rem;
+      }
+      .tend-list .topic {
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-size: 1.5rem;
+      }
+      .tend-list .desc { font-size: 0.95rem; opacity: 0.85; }
+
+      .colophon {
+        text-align: center;
+        padding: 3rem 1rem 4rem;
+        border-top: 4px double var(--ink);
+        margin-top: 4rem;
+      }
+      .colophon .row { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+      .colophon a { font-style: italic; font-family: "Cormorant Garamond", serif; font-size: 1.5rem; }
+
+      @media (max-width: 700px) {
+        .dispatch .body { columns: 1; }
+        .tend-list li { grid-template-columns: 5ch 1fr; }
+        .tend-list .desc { grid-column: 2; }
+        .masthead .label, .masthead .meta { flex-direction: column; gap: 0.25rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="label mono">
+        <span>vol. i</span>
+        <span>los angeles, california</span>
+        <span>est. mmxxv</span>
+      </div>
+      <div class="wordmark">the tending</div>
+      <div class="meta mono">
+        <span>melissa, birth doula</span>
+        <span>for your kind of birth</span>
+        <span>by appointment</span>
+      </div>
+    </header>
+
+    <p class="dek">
+      A birth doula's quiet, attentive practice. For first-time parents,
+      second-time parents, partners, and families whose births don't fit the
+      brochure.
+    </p>
+
+    <main>
+      <article class="dispatch">
+        <div class="num mono">№ 01 / on tending</div>
+        <h2 class="italic">Every family deserves to be tended to.</h2>
+        <div class="body">
+          <p>
+            Tending is a small word for a big job. Before the birth, it looks
+            like questions and answers: the long ones, the embarrassing
+            ones, the ones you didn't know to ask. During the birth, it looks
+            like a hand on a shoulder, water at the right temperature, a
+            steady voice when the room gets loud.
+          </p>
+          <p>
+            The work is not glamorous and it is not optional. It is what
+            families have done for each other for as long as there have been
+            families.
+          </p>
+        </div>
+      </article>
+
+      <section class="pull">
+        <q>Birth designed for you and yours.</q>
+      </section>
+
+      <article class="dispatch">
+        <div class="num mono">№ 02 / what you can be tended in</div>
+        <h2 class="italic">Holding space for all kinds of birth.</h2>
+        <ul class="tend-list">
+          <li>
+            <span class="roman">I</span>
+            <span class="topic">Your village</span>
+            <span class="desc">Before, during, and after your birth: the people, the rhythm, the room.</span>
+          </li>
+          <li>
+            <span class="roman">II</span>
+            <span class="topic">Your vision</span>
+            <span class="desc">What you want this birth to feel like, before anyone else gets a vote.</span>
+          </li>
+          <li>
+            <span class="roman">III</span>
+            <span class="topic">Your choices</span>
+            <span class="desc">There are more options than the pamphlet shows. We'll go through them.</span>
+          </li>
+          <li>
+            <span class="roman">IV</span>
+            <span class="topic">Your partner</span>
+            <span class="desc">So they can show up ready and supported, not stranded in the corner.</span>
+          </li>
+          <li>
+            <span class="roman">V</span>
+            <span class="topic">Your questions</span>
+            <span class="desc">Yes, all of them. The first consult is free.</span>
+          </li>
+          <li>
+            <span class="roman">VI</span>
+            <span class="topic">Your care team</span>
+            <span class="desc">The circle around your birth: providers, family, friends, on your terms.</span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="dispatch">
+        <div class="num mono">№ 03 / about</div>
+        <h2 class="italic">A short note from Melissa.</h2>
+        <div class="body">
+          <p>
+            I'm Melissa Cunningham. I trained as a birth doula and I work in
+            Los Angeles and the surrounding county. I came to this work the
+            way most doulas do, by being in a room where someone needed it
+            and realizing the room needed more.
+          </p>
+          <p>
+            I work with first-time parents, second-time parents, partners,
+            queer families, single parents by choice, and anyone whose birth
+            doesn't fit a brochure. I don't have a script. We figure out what
+            your kind of birth looks like, and then I help you get there.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="colophon">
+      <div class="row mono">
+        <span>write</span>
+        <span>·</span>
+        <span>visit</span>
+        <span>·</span>
+        <span>follow</span>
+      </div>
+      <div class="row">
+        <a href="mailto:hello@example.com">hello@example.com</a>
+        <a href="https://instagram.com/thetendingdoula">@thetendingdoula</a>
+      </div>
+      <div class="mono" style="margin-top: 2rem; opacity: 0.6;">
+        the tending · los angeles · © melissa
+      </div>
+    </footer>
+  </body>
+</html>
